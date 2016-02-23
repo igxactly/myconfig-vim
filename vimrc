@@ -1,23 +1,45 @@
+" vim configurations
 set nu laststatus=2 wildmenu hlsearch cursorline softtabstop=4 tabstop=4 shiftwidth=4 expandtab ai
+source ~/.vim/tags_path_cmd
 
+" #########################################
+" plugin configurations
+" ##
 
 " vim-airline
 set t_Co=256
 let g:airline#extensions#tabline#enabled = 1
 
-" vim-plug
+" vim-move key binding (^j ^k)
+let g:move_key_modifier = 'C'
+
+
+
+" ##########################################
+" vim-plug config start
+" ##
 call plug#begin('~/.vim/plugged')
 
 Plug 'bling/vim-airline'
 
+" Trinity Trio
 Plug 'taglist.vim'
 Plug 'wesleyche/srcexpl'
 Plug 'wesleyche/Trinity'
 
-Plug 'majutsushi/tagbar'
-
+" Whitespace Trimmer
 Plug 'ntpeters/vim-better-whitespace'
 
+" C Call Tree
+Plug 'hari-rangarajan/cctree'
+
+" Tagbar (taglist alternative)
+Plug 'majutsushi/tagbar'
+
+" vim-move: moves lines up & down
+Plug 'matze/vim-move'
+
+"" vimplug author's comment
 " " Make sure you use single quotes
 " Plug 'junegunn/seoul256.vim'
 " Plug 'junegunn/vim-easy-align'
