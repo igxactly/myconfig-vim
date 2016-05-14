@@ -1,6 +1,9 @@
 " vim configurations
 set nu laststatus=2 wildmenu hlsearch cursorline softtabstop=4 tabstop=4 shiftwidth=4 expandtab ai
-source ~/.vim/tags_path_cmd
+
+if !empty(glob("~/.vim/tags_path_cmd"))
+    source ~/.vim/tags_path_cmd
+endif
 
 " #########################################
 " plugin configurations
