@@ -23,6 +23,7 @@ let g:move_key_modifier = 'C'
 " ##
 call plug#begin('~/.vim/plugged')
 
+" AirLine
 Plug 'bling/vim-airline'
 
 " Trinity Trio
@@ -41,6 +42,9 @@ Plug 'majutsushi/tagbar'
 
 " vim-move: moves lines up & down
 Plug 'matze/vim-move'
+
+" scala syntax support
+Plug 'derekwyatt/vim-scala'
 
 "" vimplug author's comment
 " " Make sure you use single quotes
