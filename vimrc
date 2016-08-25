@@ -43,7 +43,9 @@ Plug 'majutsushi/tagbar'
 " vim-move: moves lines up & down
 Plug 'matze/vim-move'
 
-" scala syntax support
+" Programming Language Supports
+Plug 'fatih/vim-go'
+Plug 'rhysd/vim-crystal'
 Plug 'derekwyatt/vim-scala'
 
 "" vimplug author's comment
